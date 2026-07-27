@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Biblioteca Escolar - Kenet | Portafolio</title>
+  <title>Veterinaria - Kenet | Portafolio</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -42,8 +42,6 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Kenet</h1>
       </a>
 
@@ -71,10 +69,10 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Inicio</a></li>
-            <li class="current">Biblioteca Escolar</li>
+            <li class="current">Veterinaria</li>
           </ol>
         </nav>
-        <h1>Biblioteca Escolar</h1>
+        <h1>Veterinaria</h1>
       </div>
     </div><!-- End Page Title -->
 
@@ -84,8 +82,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">Detalle del Proyecto</span>
-        <h2>Biblioteca Escolar</h2>
-        <p>Sistema de gestión de biblioteca escolar con arquitectura de microservicios.</p>
+        <h2>Veterinaria</h2>
+        <p>Sistema de escritorio para gestión de clínica veterinaria.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -115,18 +113,18 @@
               <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                  <!-- [REEMPLAZA con una captura real de la pantalla principal de Biblioteca] -->
-                  <img src="assets/img/portfolio/portfolio-3.webp" alt="Biblioteca - pantalla principal" class="img-fluid">
+                  <!-- [REEMPLAZA con una captura real 1] -->
+                  <img src="imagenes proyectos/veterinaria2.png" alt="Veterinaria - captura 1" class="img-fluid">
                 </div>
 
                 <div class="swiper-slide">
-                  <!-- [REEMPLAZA con una captura del catálogo/listado de libros] -->
-                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Biblioteca - catálogo" class="img-fluid">
+                  <!-- [REEMPLAZA con una captura real 2] -->
+                  <img src="imagenes proyectos/veterinaria3.png" alt="Veterinaria - captura 2" class="img-fluid">
                 </div>
 
                 <div class="swiper-slide">
-                  <!-- [REEMPLAZA con una captura del panel de moderación] -->
-                  <img src="assets/img/portfolio/portfolio-9.webp" alt="Biblioteca - moderación" class="img-fluid">
+                  <!-- [REEMPLAZA con una captura real 3] -->
+                  <img src="imagenes proyectos/veterinaria4.png" alt="Veterinaria - captura 3" class="img-fluid">
                 </div>
 
               </div>
@@ -134,37 +132,36 @@
             </div>
 
             <div class="portfolio-content" data-aos="fade-up" data-aos-delay="200">
-              <h2>Biblioteca Escolar</h2>
+              <h2>Veterinaria</h2>
 
               <div class="meta-info">
-                <span class="date"><i class="bi bi-calendar"></i> 2026</span>
-                <span class="category"><i class="bi bi-tag"></i> Desarrollo Full Stack</span>
+                <span class="date"><i class="bi bi-calendar"></i> 2025</span>
+                <span class="category"><i class="bi bi-tag"></i> Desarrollo de Escritorio / Java</span>
                 <span class="client"><i class="bi bi-mortarboard"></i> Proyecto académico - Fundación Kinal</span>
               </div>
 
               <p>
-                Biblioteca es una aplicación web para la gestión de una biblioteca escolar, desarrollada como proyecto académico. Permite administrar libros, materias/cursos y su moderación de contenido, con una arquitectura basada en microservicios.
+                Veterinaria es una aplicación de escritorio para la gestión integral de una clínica veterinaria, desarrollada como proyecto académico con Java y JavaFX.
               </p>
 
               <h3>Descripción del proyecto</h3>
               <p>
-                [ESCRIBE AQUÍ 2-3 líneas explicando el objetivo del sistema: a quién está dirigido (estudiantes/bibliotecarios), qué problema resuelve, y qué pueden hacer los usuarios dentro de la aplicación.]
+                El sistema está dirigido al personal de una clínica veterinaria. Permite gestionar clientes y sus mascotas, citas, consultas, tratamientos, vacunación (con cartilla imprimible), recetas, facturación, compras, proveedores y empleados, todo desde una interfaz de escritorio.
               </p>
 
               <div class="highlights-box">
                 <h4>Habilidades aprendidas / aplicadas</h4>
                 <ul>
-                  <li><i class="bi bi-check-circle"></i> Arquitectura de microservicios (files-service y moderation-service)</li>
-                  <li><i class="bi bi-check-circle"></i> Backend con Node.js, Express y MongoDB</li>
-                  <li><i class="bi bi-check-circle"></i> Frontend con React (Vite)</li>
-                  <li><i class="bi bi-check-circle"></i> Manejo de subida de archivos (Cloudinary)</li>
-                  <li><i class="bi bi-check-circle"></i> Integración de frontend y backend vía API</li>
+                  <li><i class="bi bi-check-circle"></i> Desarrollo de interfaces de escritorio con JavaFX (FXML)</li>
+                  <li><i class="bi bi-check-circle"></i> Arquitectura MVC (bean / controller / view)</li>
+                  <li><i class="bi bi-check-circle"></i> Generación de reportes en PDF con JasperReports</li>
+                  <li><i class="bi bi-check-circle"></i> Persistencia en MySQL con JDBC</li>
                 </ul>
               </div>
 
               <h3>Implementación técnica</h3>
               <p>
-                El proyecto está dividido en servicios independientes: un servicio de archivos (`files-service`) construido con Node.js, Express y MongoDB, un servicio de moderación de contenido (`moderation-service`), y un frontend en React con Vite que consume ambas APIs.
+                El proyecto sigue una arquitectura MVC: los bean representan las entidades (clientes, mascotas, citas, etc.), los controller manejan la lógica de negocio, y las vistas están construidas en JavaFX con archivos FXML. Los reportes (facturas, cartilla de vacunación) se generan con JasperReports, y los datos se persisten en MySQL.
               </p>
 
             </div>
@@ -183,33 +180,32 @@
                 </div>
                 <div class="info-item">
                   <span class="label">Categoría</span>
-                  <span class="value">Desarrollo Full Stack</span>
+                  <span class="value">Desarrollo de Escritorio / Java</span>
                 </div>
                 <div class="info-item">
                   <span class="label">Año</span>
-                  <span class="value">2026</span>
+                  <span class="value">2025</span>
                 </div>
                 <div class="info-item">
                   <span class="label">Arquitectura</span>
-                  <span class="value">Microservicios</span>
+                  <span class="value">MVC (JavaFX)</span>
                 </div>
                 <div class="info-item">
                   <span class="label">Tecnologías</span>
-                  <span class="value">React, Node.js, Express, MongoDB</span>
+                  <span class="value">Java, JavaFX, MySQL, JasperReports</span>
                 </div>
-                <a href="#" class="btn-primary" target="_blank">
-                  <i class="bi bi-github"></i> Ver Repositorio en GitHub
+                <a href="https://github.com/kcuyuch-2024177/Veterinaria.git" class="btn-primary" target="_blank">
+                  <i class="bi bi-github"></i> Ver Código en GitHub
                 </a>
               </div>
 
               <div class="tags-card" data-aos="fade-up" data-aos-delay="400">
                 <h3>Etiquetas</h3>
                 <div class="tags">
-                  <a href="#">React</a>
-                  <a href="#">Node.js</a>
-                  <a href="#">Express</a>
-                  <a href="#">MongoDB</a>
-                  <a href="#">Microservicios</a>
+                  <a href="#">Java</a>
+                  <a href="#">JavaFX</a>
+                  <a href="#">MySQL</a>
+                  <a href="#">JasperReports</a>
                 </div>
               </div>
 
@@ -235,15 +231,14 @@
           </a>
           <p>Portafolio de desarrollador — Proyecto bimestral, Fundación Kinal.</p>
           <div class="social-links d-flex mt-4">
-            <a href="#" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
-            <a href="#" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="#" target="_blank" title="CompuTrabajo"><i class="bi bi-briefcase"></i></a>
+            <a href="https://github.com/kcuyuch-2024177" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/kenet-cuyuch-joj-56072a425/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
         <div class="col-lg-6 col-md-12 footer-contact text-center text-md-start">
           <h4>Contacto</h4>
-          <p><strong>Email:</strong> <span>[TU EMAIL AQUÍ]</span></p>
+          <p><strong>Email:</strong> <span>jojcuyuch@gmail.com</span></p>
         </div>
 
       </div>
@@ -263,7 +258,6 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
